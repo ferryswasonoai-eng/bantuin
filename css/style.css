@@ -171,6 +171,17 @@ p { margin: 0; }
   position: absolute;
   inset: 0;
   z-index: 0;
+  overflow: hidden;
+}
+.hero-bg-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.hero-bg-overlay {
+  position: absolute;
+  inset: 0;
   background:
     linear-gradient(120deg, rgba(0,43,91,0.94) 0%, rgba(13,71,161,0.85) 55%, rgba(13,71,161,0.55) 100%),
     repeating-linear-gradient(115deg, rgba(255,255,255,0.03) 0 2px, transparent 2px 60px);
@@ -334,9 +345,14 @@ p { margin: 0; }
   background: var(--surface-container-high);
   border-radius: var(--radius-lg);
   aspect-ratio: 4 / 3;
-  display: flex; align-items: center; justify-content: center;
+  overflow: hidden;
 }
-.about-media-inner { font-size: 64px; }
+.about-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
 .about-caption {
   position: absolute;
   left: 16px; bottom: 16px;
