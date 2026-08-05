@@ -43,12 +43,12 @@ body {
   margin: 0;
   background: var(--surface);
   color: var(--on-surface);
-  font-family: "Work Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   line-height: 24px;
 }
 a { text-decoration: none; color: inherit; }
-h1, h2, h3 { font-family: "Hanken Grotesk", sans-serif; margin: 0; }
+h1, h2, h3 { font-family: "Poppins", sans-serif; margin: 0; }
 p { margin: 0; }
 
 .container {
@@ -63,7 +63,7 @@ p { margin: 0; }
 /* ---------- Eyebrow / label ---------- */
 .eyebrow {
   display: inline-block;
-  font-family: "Work Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 0.05em;
@@ -92,7 +92,7 @@ p { margin: 0; }
   gap: 8px;
   padding: 13px 24px;
   border-radius: var(--radius-full);
-  font-family: "Work Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 14px;
   letter-spacing: 0.02em;
@@ -144,11 +144,18 @@ p { margin: 0; }
   gap: 20px;
 }
 .logo {
-  font-family: "Hanken Grotesk", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 800;
   font-size: 22px;
   color: var(--primary);
   letter-spacing: -0.02em;
+  display: flex;
+  align-items: center;
+}
+.logo-img {
+  height: 28px;
+  width: auto;
+  display: block;
 }
 .nav {
   display: flex;
@@ -201,7 +208,7 @@ p { margin: 0; }
 /* ---------- Hero ---------- */
 .hero {
   position: relative;
-  padding: 72px 0 120px;
+  padding: 56px 0 64px;
 }
 .hero-bg {
   position: absolute;
@@ -233,7 +240,7 @@ p { margin: 0; }
   margin-bottom: 20px;
 }
 .hero-sub {
-  font-family: "Work Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 18px;
   line-height: 28px;
   color: rgba(255,255,255,0.82);
@@ -246,11 +253,14 @@ p { margin: 0; }
   position: absolute;
   z-index: 2;
   right: var(--margin-mobile);
-  bottom: -30px;
-  background: var(--surface-container-lowest);
-  border-radius: var(--radius-lg);
-  box-shadow: 0 4px 20px rgba(0,0,0,0.10);
-  padding: 16px 22px;
+  bottom: -26px;
+  background: rgba(15, 25, 40, 0.55);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.14);
+  border-radius: var(--radius-md);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.18);
+  padding: 14px 18px;
   display: flex;
   align-items: center;
   gap: 12px;
@@ -259,25 +269,24 @@ p { margin: 0; }
   .hero-badge { right: var(--margin-desktop); }
 }
 .badge-icon {
-  width: 34px; height: 34px;
-  border-radius: 50%;
+  width: 32px; height: 32px;
+  border-radius: var(--radius-sm);
   background: var(--secondary);
   color: var(--on-secondary);
   display: flex; align-items: center; justify-content: center;
-  font-size: 15px; font-weight: 700;
+  font-size: 14px; font-weight: 700;
 }
-.badge-title { font-family: "Hanken Grotesk", sans-serif; font-weight: 700; font-size: 16px; color: var(--on-surface); }
-.badge-sub { font-size: 12px; color: var(--on-surface-variant); }
+.badge-title { font-family: "Poppins", sans-serif; font-weight: 700; font-size: 16px; color: #fff; }
+.badge-sub { font-size: 12px; color: rgba(255,255,255,0.75); }
 
 /* ---------- Tagline banner ---------- */
 .tagline-banner {
   background: var(--primary);
   padding: 22px 0;
-  margin-top: 30px;
 }
 .tagline-banner p {
   color: #fff;
-  font-family: "Hanken Grotesk", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 20px;
   font-weight: 600;
   text-align: center;
@@ -286,6 +295,7 @@ p { margin: 0; }
 
 /* ---------- Sections ---------- */
 .section { padding: var(--section-gap) 0; }
+.services { padding-top: 36px; }
 
 /* ---------- Service cards ---------- */
 .service-grid {
@@ -305,7 +315,7 @@ p { margin: 0; }
 .card-watermark {
   position: absolute;
   top: -18px; right: 6px;
-  font-family: "Hanken Grotesk", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 96px;
   font-weight: 800;
   color: var(--surface-container);
@@ -337,12 +347,12 @@ p { margin: 0; }
   border-radius: var(--radius-full);
 }
 .chip-premium { background: var(--secondary); color: var(--on-secondary); }
-.chip-priority { background: #fff; color: var(--primary); }
-.chip-versatile { background: rgba(255,255,255,0.2); color: #fff; border: 1px solid rgba(255,255,255,0.4); }
+.chip-priority { background: rgba(15,25,40,0.82); color: #fff; }
+.chip-versatile { background: rgba(15,25,40,0.82); color: #fff; }
 
 .card-body { position: relative; z-index: 1; padding: var(--card-padding); }
 .card-num {
-  font-family: "Hanken Grotesk", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 13px;
   font-weight: 700;
   color: var(--secondary);
@@ -412,7 +422,7 @@ p { margin: 0; }
   gap: 40px;
 }
 .stat-num {
-  font-family: "Hanken Grotesk", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 28px;
   font-weight: 800;
   color: var(--primary);
@@ -445,7 +455,7 @@ p { margin: 0; }
 .logo-footer { color: #fff; margin-bottom: 10px; }
 .footer-brand p { font-size: 14px; color: rgba(255,255,255,0.65); }
 .footer-col h5 {
-  font-family: "Work Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.05em;
@@ -530,7 +540,7 @@ p { margin: 0; }
   border: 1px solid var(--outline-variant);
   border-radius: var(--radius-full);
   padding: 10px 20px;
-  font-family: "Hanken Grotesk", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 14px;
   color: var(--on-surface);
@@ -588,7 +598,7 @@ p { margin: 0; }
   background: var(--secondary);
   color: var(--on-secondary);
   display: flex; align-items: center; justify-content: center;
-  font-family: "Hanken Grotesk", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 800;
   font-size: 16px;
   margin: 0 auto 12px;
